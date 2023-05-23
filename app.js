@@ -21,10 +21,6 @@ mongoose.connect(process.env.MONGODB_URI, {
   });
 
 app.use(bodyParser.json());
-
-
-
-
 app.post('/api/signup', userController.signup);
 app.post('/api/signin', userController.signin);
 
